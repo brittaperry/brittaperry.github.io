@@ -1,52 +1,55 @@
+@font-face {
+    font-family: 'cliftontrialregular';
+    src: url('https://www.lizvwells.com/wp-content/uploads/2019/07/cliftontrial-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'cliftontrialitalic';
+    src: url('https://www.lizvwells.com/wp-content/uploads/2019/07/cliftontrial-italic-webfont.woff') format('woff');
+}
+
 body{
     margin: 0px;
     padding: 0px;
-    display: inline-block;
     font-family: 'Poppins', sans-serif;
-    background-color: SkyBlue;
-    min-height: 1000px;
-}
-
-body .header .nav{
-    background-color: SkyBlue;
+    background-color:rgb(175, 221, 240);
 }
 
 a{
     color: Black;
-    text-decoration: Gold underline solid;
+    text-decoration: Yellow underline solid;
 }
 
 a:hover {
-    text-decoration: Gold underline solid;
-    color: Gold;
+    text-decoration: Yellow underline solid;
+    color: Yellow;
   }
 
+/* header */
 .header {
     height: 70px;
     position: fixed;
     width: 100%;
-    background-color: SkyBlue;
-        -webkit-box-shadow: 0 2px 8px -8px black;
-           -moz-box-shadow: 0 2px 8px -8px black;
-                box-shadow: 0 2px 8px -8px black;
-}
-
-.title{
-    color: Gold;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 20px;
-    text-align: center;
-
-}
-
-.nav li{
+    background-color:rgb(175, 221, 240);
+        -webkit-box-shadow: 0 1px 8px -8px black;
+           -moz-box-shadow: 0 1px 8px -8px black;
+                box-shadow: 0 1px 8px -8px black;
     display: inline-block;
     text-align: center;
     list-style-type: none;
 }
 
-li {
+.title{
+    color: yellow;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 20px;
+    text-align: center;
+    font-family: 'cliftontrialitalic';
+}
+
+/* nav */
+.nav li{
     float: left;
     text-align: center;
     padding: 20px;
@@ -72,24 +75,92 @@ li {
     margin: 5px;
 }
 
-#about{
+#info{
     position: absolute;
     right: 20px;
     margin: 5px;
 }
 
-.main{
-    width: 80%;
+/* footer */
+footer{
+    margin: 0 auto;
+    padding: 20px 20px 20px 0px;
+    text-align: center;
+}
+footer ul{
     margin: 0 auto;
 }
+footer li {
+    display:inline-block;
+    list-style-type: none;
+    padding: 20px 10px;
+}
 
-.slideshow-container{
+/* content */
+.main{
+    width: 60%;
     margin: 0 auto;
     padding: 90px 0px 20px 0px;
-    width: 80%;
+}
+
+/* home page */
+.slideshow-container{
+    margin: 0 auto;
+    width: 100%;
 }
 
 .content{
-    font-size: 30px;
     text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+/* about page */
+
+#bio-image{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about-text{
+    padding: 40px 0px;
+    font-size: 20px;
+    width: 100%;
+}
+
+figcaption{
+    text-align: right;
+}
+
+/* photos page */
+.photomain {
+    /*flex-direction: row; */
+    display: -webkit-flex;
+    align-content: center;
+    /* flex-flow: row wrap; */
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.photoblock{
+    width: 32%;
+    height: 350px;
+    padding: 4px;
+    display: inline-block;
+    overflow: hidden;
+    background-size:100%;  
+    background-position: center center;
+}
+
+.photoblock img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .5s ease;
+    background-size:100%;  
+    background-position: center center;
+}
+
+.photoblock:hover img {
+    transform: scale(1.1);
 }
