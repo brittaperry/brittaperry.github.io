@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    background-color: SkyBlue;
+    min-height: 1000px;
+}
+
+body .header .nav{
+    background-color: SkyBlue;
+}
+
+a{
+    color: Black;
+    text-decoration: Gold underline solid;
+}
+
+a:hover {
+    text-decoration: Gold underline solid;
+    color: Gold;
+  }
+
+.header {
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    background-color: SkyBlue;
+        -webkit-box-shadow: 0 2px 8px -8px black;
+           -moz-box-shadow: 0 2px 8px -8px black;
+                box-shadow: 0 2px 8px -8px black;
+}
+
+.title{
+    color: Gold;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.nav li{
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 0px;
+}
+
+#work{
+    position: absolute;
+    left: 20px;
+    margin: 5px;
+}
+
+#photos{
+    position: absolute;
+    left: 80px;
+    margin: 5px;
+}
+
+#blog{
+    position: absolute;
+    right: 80px;
+    margin: 5px;
+}
+
+#about{
+    position: absolute;
+    right: 20px;
+    margin: 5px;
+}
+
+.main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slideshow-container{
+    margin: 0 auto;
+    padding: 90px 0px 20px 0px;
+    width: 80%;
+}
+
+.content{
+    font-size: 30px;
+    text-align: center;
+}
