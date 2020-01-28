@@ -37,6 +37,7 @@ a:hover {
     display: inline-block;
     text-align: center;
     list-style-type: none;
+    z-index: 10;
 }
 
 .title{
@@ -140,27 +141,81 @@ figcaption{
     /* flex-flow: row wrap; */
     padding-top: 50px;
     overflow: hidden;
+    position: relative; /* for overlay */
 }
 
 .photoblock{
-    width: 32%;
     height: 350px;
-    padding: 4px;
-    display: inline-block;
-    overflow: hidden;
-    background-size:100%;  
-    background-position: center center;
+    margin: 4px;
+    width: 32%;
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block; /* for 3 columns */
+    overflow: hidden; /* for zoom-in */
+    position: relative;
 }
 
 .photoblock img {
     max-width: 100%;
+    max-height: 100%;
     display: block;
     object-fit: cover;
     transition: transform .5s ease;
-    background-size:100%;  
-    background-position: center center;
 }
 
 .photoblock:hover img {
     transform: scale(1.1);
 }
+
+.photoblock_overlay{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0); /* Black see-through */
+    color: #f1f1f1;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.photoblock:hover .photoblock_overlay {
+    opacity: 1;
+  }
+  
+  .photoblock_photo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0; /* for overlay black */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0; /* overlay with text and color */
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .photoblock:hover .overlay {
+    opacity: 1; /* for solid white text */
+  }
+  
+  .overlay_text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    -webkit-transform: translate(0%, 0%); /* position*/
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    text-align: center;
+  }
