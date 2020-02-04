@@ -7,15 +7,12 @@
     font-family: 'cliftontrialitalic';
     src: url('https://www.lizvwells.com/wp-content/uploads/2019/07/cliftontrial-italic-webfont.woff') format('woff');
 }
-*{
-    box-sizing: border-box;
-}
 
 body{
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
-    background-color:rgb(175, 221, 240);
+    background-color:rgb(255, 255, 255);
 }
 
 a{
@@ -33,7 +30,8 @@ a:hover {
     height: 70px;
     position: fixed;
     width: 100%;
-    background-color:rgb(175, 221, 240);
+    /*background-color:rgb(188, 233, 247);*/
+    background-color:rgb(255, 255, 255);
         -webkit-box-shadow: 0 1px 8px -8px black;
            -moz-box-shadow: 0 1px 8px -8px black;
                 box-shadow: 0 1px 8px -8px black;
@@ -102,23 +100,17 @@ footer li {
 
 /* content */
 .main{
-    width: 60%;
-    margin: 0 auto;
-    padding: 90px 0px 20px 0px;
-}
-
-.photoMain {
-    width: 60%;
     display: flex;
-    flex-direction: row;
-    align-content: center;
+    width: 60%;
+    padding: 90px 0px 50px 0px;
     margin: 0 auto;
-    padding: 90px 0px 20px 0px;
+    flex-direction: column;
 }
 
 /* home page */
 .slideshow-container{
     margin: 0 auto;
+    padding: 20px 0px 20px 0px;
     width: 100%;
     max-height: 80%;
 }
@@ -147,22 +139,21 @@ figcaption{
 
 /* photos page */
 .photomain {
-    /*flex-direction: row; */
     display: -webkit-flex;
-    align-content: center;
-    /* flex-flow: row wrap; */
-    padding-top: 50px;
-    overflow: hidden;
-    position: relative; /* for overlay */
+    width: 100%;
+    flex-direction: row;
+    margin: 50 auto;
+    padding: 50px 0px 20px 0px;
+    position: relative;
 }
 
 .photoblock{
     height: 350px;
     margin: 4px;
-    width: 32%;
+    width: 33.33%;
     max-width: 100%;
     max-height: 100%;
-    display: inline-block; /* for 3 columns */
+    display: -webkit-flex; /* for 3 columns */
     overflow: hidden; /* for zoom-in */
     position: relative;
 }
@@ -178,32 +169,14 @@ figcaption{
 .photoblock:hover img {
     transform: scale(1.1);
 }
-
-.photoblock_overlay{
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0); /* Black see-through */
-    color: #f1f1f1;
-    transition: .5s ease;
-    opacity: 0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.photoblock:hover .photoblock_overlay {
-    opacity: 1;
-  }
   
-.photoblock_photo {
+.photoblock_photo{
     display: block;
     width: 100%;
     height: auto;
 }
   
-  .overlay {
+.overlay {
     position: absolute;
     top: 0; /* for overlay black */
     bottom: 0;
@@ -214,13 +187,13 @@ figcaption{
     opacity: 0; /* overlay with text and color */
     transition: .5s ease;
     background-color: rgba(0, 0, 0, 0.3);
-  }
+}
   
-  .photoblock:hover .overlay {
+.photoblock:hover .overlay {
     opacity: 1; /* for solid white text */
-  }
-  
-  .overlay_text {
+}
+
+.overlay_text {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -230,37 +203,43 @@ figcaption{
     -ms-transform: translate(0%, 0%);
     transform: translate(0%, 0%);
     text-align: center;
-  }
-
-  /* portrait page */
-.photo-container {
-    display: inline-block;
-    text-align: center;
-    height: 520px;
-    width: 800px;
-    position: relative;
-    margin: 10px auto;
 }
 
-.myPhotoslides {
-    display: flex;
-    overflow: none;
+  /* portrait page */
+.gallerymain{
+    width: 60%;
+    padding: 90px 0px 50px 0px;
+    margin: 0 auto;
+}
+
+.photo-container {
+    display: -webkit-flex;
+    align-content: center;
+    justify-content: center;
+    max-height: 75vh;
+    min-height: 0;
+    max-width: 100%;
+    min-width: 0;
+    padding: 20px 0px 20px 0px;
+    position: relative;
 }
 
 .photoImage {
-    max-width: auto;
-    max-height: 520px;
+    display: block;
+    width: auto;
+    max-height: 100%;
+    min-width: 0;
+    min-height: 0;
+    margin: 0 auto;
 }
 
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    height: 100%;
+    height: 80vh;
     width: 50%;
-    padding: 16px;
+    padding: 0px;
     color: white;
-    font-weight: bold;
-    font-size: 18px;
     transition: 0.6s ease;
     user-select: none;
   }
@@ -275,14 +254,11 @@ figcaption{
     top: 0;
 }
   
-  /* On hover, add a black background color with a little bit see-through */
 .prev:hover{
-    background-color: rgba(0,0,0,0);
     cursor: w-resize;
 }
 
 .next:hover {
-    background-color: rgba(0,0,0,0);
     cursor: e-resize;
   }
   
@@ -302,3 +278,44 @@ figcaption{
     from {opacity: .4} 
     to {opacity: 1}
   }
+
+/* design page */
+.designblock{
+    max-height: 280px;
+    margin: 10px;
+    max-width: 100%;
+    display: -webkit-flex; /* for 3 columns */
+    overflow: hidden; /* for zoom-in */
+    position: relative;
+}
+  
+.designblock_photo{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.designblock img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.designblock:hover img {
+    transform: scale(1.1);
+}
+  
+.designblock:hover .overlay {
+    opacity: 1; /* for solid white text */
+}
+
+/* individual design pages */
+.designphoto{
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    height: auto;
+}
