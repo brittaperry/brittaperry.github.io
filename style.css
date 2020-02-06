@@ -8,10 +8,20 @@
     src: url('https://www.lizvwells.com/wp-content/uploads/2019/07/cliftontrial-italic-webfont.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'foundersregular';
+    src: url('../fonts/') format('woff');
+}
+
+@font-face {
+    font-family: 'cliftontrialitalic';
+    src: url('https://www.lizvwells.com/wp-content/uploads/2019/07/cliftontrial-italic-webfont.woff') format('woff');
+}
+
 body{
     margin: 0px;
     padding: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'foundersregular', sans-serif;
     background-color:rgb(255, 255, 255);
 }
 
