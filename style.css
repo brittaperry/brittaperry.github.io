@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'foundersregular';
-    src: url('../fonts/founders-grotesk-text-test-regular.woff') format('woff');
+    src: url('./fonts/founders-grotesk-text-test-regular.woff') format('woff');
 }
 
 @font-face {
