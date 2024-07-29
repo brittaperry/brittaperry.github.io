@@ -1,0 +1,18 @@
+.header{
+height: 70px;
+position: fixed;
+width: 100%;
+display: inline-block;
+}
+
+.title{
+font-size: 24px;
+margin: 20px;
+text-align: right;
+}
+
+.links{
+font-size: 24px;
+margin: 20px;
+text-align: left;
+}
