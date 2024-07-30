@@ -85,7 +85,9 @@ background-color: var(--bg-color);
 }
 
 h3 {
-    font-family: 'BlancoTrial-Regular', serif;
+    font-family: 'prestigeregular', serif;
+    font-size: 20px;
+    line-height: 1.3em;
 }
 
 /*FOOTER*/
