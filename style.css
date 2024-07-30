@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'BlancoTrial-Regular.otf';
-    src: url('') format('otf');
+    src: url('./BlancoTrial-Regular.otf') format('otf');
 }
 
 body {
