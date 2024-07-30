@@ -19,6 +19,12 @@
     src: url('https://static1.squarespace.com/static/557a63fce4b0ce57bf20615b/t/66a86b1b3e417d18aaf588a2/1722313499499/Favorit-Light.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'Triptych';
+    src: url('https://static1.squarespace.com/static/557a63fce4b0ce57bf20615b/t/66a92663845409616b4ff7c3/1722361443641/TriptychTest-Roman.otf') format('opentype');
+}
+
+
 body {
     width: 100%;
     margin-left: auto;
@@ -46,11 +52,11 @@ body {
 
 .title{
     display: flex;
-    font-size: 20px;
+    font-size:18px;
     margin: 20px;
     align-items: center;
     justify-content: center;
-    font-family: FavoritRegular;
+    font-family: Triptych;
 }
 
 .links{
@@ -118,6 +124,9 @@ a:active {
 h1{
     font-family: 'FavoritRegular';
     font-size: 18px;
+    color:#212121;
+    letter-spacing: 0.03em;
+
 }
 
 h2{
@@ -129,7 +138,10 @@ h2{
 h3 {
     font-family: 'FavoritRegular';
     font-size: 14px;
-    color: #333333;
+    color:#212121;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+    font-kerning: normal;
 }
 
 /*FOOTER*/
