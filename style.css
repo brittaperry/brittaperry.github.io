@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'BlancoTrialRegular';
+    font-family: 'BlancoRegular';
     src: url('https://static1.squarespace.com/static/557a63fce4b0ce57bf20615b/t/66a868b12b568653087b8289/1722312881511/BlancoTrial-Regular.otfhttps://static1.squarespace.com/static/557a63fce4b0ce57bf20615b/t/66a868b12b568653087b8289/1722312881511/BlancoTrial-Regular.otf') format('opentype');
 }
 
@@ -11,6 +11,11 @@
 @font-face {
     font-family: 'FavoritRegular';
     src: url('https://static1.squarespace.com/static/557a63fce4b0ce57bf20615b/t/66a86b24b417116e19c8dbc7/1722313508368/Favorit-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'FavoritLight';
+    src: url('https://static1.squarespace.com/static/557a63fce4b0ce57bf20615b/t/66a86b1b3e417d18aaf588a2/1722313499499/Favorit-Light.otf')') format('opentype');
 }
 
 body {
@@ -89,12 +94,17 @@ background-color: var(--bg-color);
 
 }
 
-h2{
+h1{
     font-family: 'FavoritRegular';
 }
+
+h2{
+    font-family: 'BlancoRegular';
+}
+
 h3 {
     font-size: 18px;
-    font-family: 'FavoritRegular';
+    font-family: 'FavoritLight';
 }
 
 /*FOOTER*/
