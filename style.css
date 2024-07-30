@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'BlancoTrial-Regular';
+    font-family: 'BlancoTrialRegular';
     src: url('https://static1.squarespace.com/static/557a63fce4b0ce57bf20615b/t/66a868b12b568653087b8289/1722312881511/BlancoTrial-Regular.otfhttps://static1.squarespace.com/static/557a63fce4b0ce57bf20615b/t/66a868b12b568653087b8289/1722312881511/BlancoTrial-Regular.otf') format('opentype');
 }
 
@@ -87,6 +87,7 @@ background-color: var(--bg-color);
 h3 {
     font-size: 12px;
     line-height: 1.3em;
+    font-family: 'BlancoTrialRegular';
 }
 
 /*FOOTER*/
