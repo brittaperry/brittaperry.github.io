@@ -8,6 +8,11 @@
     src: url('https://static1.squarespace.com/static/579977461b631b51b014916b/t/5e3b9d269f9dc6477d2b6fd1/1580965159057/PrestigeEliteStd-Slanted.otf') format('woff');
 }
 
+@font-face {
+    font-family: 'FavoritRegular';
+    src: url('https://static1.squarespace.com/static/557a63fce4b0ce57bf20615b/t/66a86b24b417116e19c8dbc7/1722313508368/Favorit-Regular.otf') format('woff');
+}
+
 body {
     width: 100%;
     margin-left: auto;
@@ -84,6 +89,9 @@ background-color: var(--bg-color);
 
 }
 
+h2{
+    font-family: 'FavoritRegular';
+}
 h3 {
     font-size: 20px;
     font-family: 'BlancoTrialRegular';
