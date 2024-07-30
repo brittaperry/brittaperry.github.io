@@ -23,6 +23,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+    background-color: lightgoldenrodyellow;
 }
 
 /*HEADER*/
@@ -96,15 +97,18 @@ background-color: var(--bg-color);
 
 h1{
     font-family: 'FavoritRegular';
+    font-size: 16px;
 }
 
 h2{
     font-family: 'BlancoRegular';
+    font-size: 14px;
+
 }
 
 h3 {
-    font-size: 14px;
     font-family: 'FavoritLight';
+    font-size: 12px;
 }
 
 /*FOOTER*/
