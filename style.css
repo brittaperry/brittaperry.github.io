@@ -8,12 +8,6 @@
     src: url('https://static1.squarespace.com/static/579977461b631b51b014916b/t/5e3b9d269f9dc6477d2b6fd1/1580965159057/PrestigeEliteStd-Slanted.otf') format('woff');
 }
 
-
-@font-face {
-    font-family: 'prestigeitalics';
-    src: url('https://static1.squarespace.com/static/579977461b631b51b014916b/t/5e3b9d269f9dc6477d2b6fd1/1580965159057/PrestigeEliteStd-Slanted.otf') format('woff');
-}
-
 body {
     width: 100%;
     margin-left: auto;
@@ -93,7 +87,7 @@ background-color: var(--bg-color);
 h3 {
     font-size: 12px;
     line-height: 1.3em;
-    font-family: 'prestigeitalics', serif;
+    font-family: 'BlancoTrial-Regular', serif;
 }
 
 /*FOOTER*/
