@@ -1,3 +1,86 @@
+@media only screen and (max-width: 800px) {
+
+    
+  .main {
+  
+  }
+
+  body {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding: 0;
+    background-color: lightgoldenrodyellow;
+}
+
+  .homeblock{
+    display: flex;
+    width: 100%;
+    columns: 2;
+    column-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  } 
+
+  .homeimage{
+      flex-basis: 80%;
+      align-items: center;
+      display: block;
+      margin: 0 auto;
+  }
+
+  .homeabout{
+      flex-basis: 80%;
+      font-size: 20px;
+      display: block;
+      margin: 0 auto;
+  }
+
+  .aboutblock{
+      display: block;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  .aboutimage{
+      display: block;
+      align-items: center;
+      padding: 0px 20px 0px 20px;
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .aboutbody{
+      font-size: 18px;
+      display: block;
+      align-items: center;
+      width: 80%;
+      padding: 0px 20px 0px 20px;
+      margin: 0 auto;
+  }
+
+  .writingblock{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 0px;
+  }
+
+  .writingbody{
+      font-size: 20px;
+      display: block;
+      margin: 0 auto;
+      font-size: 18px;
+      width: 90%;
+      margin-top: 80px;
+  }
+
+}
 
 @font-face {
     font-family: 'BlancoRegular';
@@ -185,11 +268,13 @@ a:active {
     color:black;
 }
 
+@media only screen and (min-width: 601px) {
+
 /*CONTENT*/
 .main{
     display: flex;
     width: 80%;
-    padding: 100px 0px 50px 0px;
+    padding: 100px 10px 50px 10px;
     margin: 0 auto;
     flex-direction: column;
 }
@@ -197,19 +282,22 @@ a:active {
 .homeblock{
     display: flex;
     columns: 2;
-    column-gap: 30px;
+    column-gap: 10px;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .homeimage{
-    width: 50%;
+    flex-basis: 50%;
+    align-items: center;
     display: inline-block;
 }
 
 .homeabout{
-    font-size: 18px;
-    width: 50%;
-
+    flex-basis: 40%;
+    font-size: 20px;
+    display: inline-block;
 }
 
 .aboutblock{
@@ -218,22 +306,24 @@ a:active {
     column-gap: 30px;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .aboutimage{
-    width: 30%;
     display: inline-block;
     align-items: center;
-    padding: 0px 50px 0px 50px;
+    padding: 0px 20px 0px 20px;
+    flex-basis: 50%;
 }
 
 .aboutbody{
     font-size: 18px;
-    padding: 0px 50px 0px 50px;
-    width: 50%;
-
+    display: inline-block;
+    flex-basis: 50%;
+    padding: 0px 20px 0px 20px;
 }
 
+}
 
 h1{
     font-family: 'Favorit';
@@ -263,7 +353,7 @@ footer{
     font-size: 16px;
     flex-wrap: nowrap;
     margin: 0 auto;
-    padding: 20px 20px 20px 0px;
+    padding: 40px 20px 20px 0px;
     text-align: center;
     font-family: FavoritRegular;
 }
