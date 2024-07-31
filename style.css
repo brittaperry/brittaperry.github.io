@@ -99,7 +99,7 @@ a:active {
 .main{
     display: flex;
     width: 80%;
-    padding: 140px 0px 50px 0px;
+    padding: 100px 0px 50px 0px;
     margin: 0 auto;
     flex-direction: column;
 }
@@ -174,7 +174,7 @@ footer{
     font-size: 16px;
     flex-wrap: nowrap;
     margin: 0 auto;
-    padding: 40px 20px 20px 0px;
+    padding: 20px 20px 20px 0px;
     text-align: center;
     font-family: FavoritRegular;
 }
