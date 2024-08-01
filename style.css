@@ -17,6 +17,7 @@
     width: 100%;
     columns: 2;
     column-gap: 10px;
+    margin-top: 20px;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
